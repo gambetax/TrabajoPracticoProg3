@@ -29,7 +29,9 @@ namespace Modelos
             using (OleDbDataReader datos = base.getRows("SELECT idTipoUsuario, Nombre, Descripcion FROM tbTipoUsuario") ) {
                 while (datos.Read())
                 {
-                    this.listado.Add( new cTipoUsuario( (int)datos["idTipoUsuario"], datos["Nombre"].ToString() , datos["Descripcion"].ToString() ));                    
+                    this.listado.Add( new cTipoUsuario( (int)datos["idTipoUsuario"],
+                        datos["Nombre"].ToString() ,
+                        datos["Descripcion"].ToString() ));                    
                 }
             }
 

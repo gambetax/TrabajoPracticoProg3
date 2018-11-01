@@ -20,13 +20,13 @@ namespace Modelos
 
             IDictionary<string, object> param = new Dictionary<string, object>();
 
-            param.Add( "idTipoUsuario" , user.idTipoUsuario );
-            param.Add("Nombre", user.Nombre);
-            param.Add("Apellido", user.Apellido);
-            param.Add("Dni", user.Dni );
-            param.Add("Usuario", user.Usuario );
-            param.Add("Pass", user.Pass );
-            param.Add("Email", user.Email );
+            param.Add( "idTipoUsuario" , user.GetSetIdTipoUsuario );
+            param.Add("Nombre", user.GetSetNombre);
+            param.Add("Apellido", user.GetSetApellido);
+            param.Add("Dni", user.GetSetDni );
+            param.Add("Usuario", user.GetSetUsuario );
+            param.Add("Pass", user.GetSetPass );
+            param.Add("Email", user.GetSetEmail );
 
             return base.addRow( "tbUsuario" , param );
             
@@ -35,14 +35,14 @@ namespace Modelos
         public bool edit( cUsuario user ) {            
             IDictionary<string, object> param = new Dictionary<string, object>();
                         
-            param.Add("idTipoUsuario", user.idTipoUsuario);
-            param.Add("Nombre", user.Nombre);
-            param.Add("Apellido", user.Apellido);
-            param.Add("Dni", user.Dni);
-            param.Add("Usuario", user.Usuario);
-            param.Add("Pass", user.Pass);
-            param.Add("Email", user.Email);
-            param.Add("idUsuario", user.idUsuario);
+            param.Add("idTipoUsuario", user.GetSetIdTipoUsuario);
+            param.Add("Nombre", user.GetSetNombre);
+            param.Add("Apellido", user.GetSetApellido);
+            param.Add("Dni", user.GetSetDni);
+            param.Add("Usuario", user.GetSetUsuario);
+            param.Add("Pass", user.GetSetPass);
+            param.Add("Email", user.GetSetEmail);
+            param.Add("idUsuario", user.GetSetIdUsuario);
                         
             return base.editRow( "idUsuario", "tbUsuario", param );
 

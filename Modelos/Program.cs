@@ -17,7 +17,7 @@ namespace Modelos
                 cTiposUsuario tipos = new cTiposUsuario();
                 cTipoUsuario t = tipos.getId(2); //retorna null si no encontro nada
                 if (!t.Equals(null)) {
-                    Console.WriteLine("Tipo encontrado: {0} - {1} ", t.idTipoUsuario, t.Nombre);
+                    Console.WriteLine("Tipo encontrado: {0} - {1} ", t.IdTipoUsuario, t.GetSetNombre);
                     t = null; //libero
                 }
 
@@ -26,7 +26,7 @@ namespace Modelos
                 todos = tipos.getAll();
                 Console.WriteLine("\n\nAhora listamos todos los tipos de usuario:");
                 foreach (cTipoUsuario ct in todos) {
-                    Console.WriteLine("{0} - {1} - ({2}) ", ct.idTipoUsuario, ct.Nombre, ct.Descripcion );
+                    Console.WriteLine("{0} - {1} - ({2}) ", ct.IdTipoUsuario, ct.GetSetNombre, ct.GetSetDescripcion );
                 }
                 tipos = null;
             

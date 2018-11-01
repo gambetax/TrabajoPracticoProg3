@@ -5,28 +5,28 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Modelos
-{
-    public class cTipoUsuario
+{       
+
+    public class cTipoNovedad
     {
-        private int idTipoUsuario;
+        private int idTipoNovedad;
         private string Nombre;
         private string Descripcion;
 
-        public cTipoUsuario( int id, string nom, string des ) {
-
-            this.IdTipoUsuario = (!id.Equals(null)) ? id : 0; 
-            this.Nombre1 = ( !nom.Equals(null) ) ? nom : "";
+        public cTipoNovedad( int id, string nom, string des) {
+            this.IdTipoNovedad = ( !id.Equals(null) ) ? id : 0;
+            this.Nombre1 = (!nom.Equals(null)) ? nom : "";
             this.Descripcion1 = (!des.Equals(null)) ? des : "";
-
         }
-        public cTipoUsuario() { }
+
+        public cTipoNovedad() { }
 
         //GETTERS & SETTERS
 
-        public int IdTipoUsuario { get => idTipoUsuario; set => idTipoUsuario = value; }
+        public int IdTipoNovedad { get => idTipoNovedad; set => idTipoNovedad = value; }
         public string Nombre1 { get => Nombre; set => Nombre = value; }
         public string Descripcion1 { get => Descripcion; set => Descripcion = value; }
 
-   
     }
+
 }

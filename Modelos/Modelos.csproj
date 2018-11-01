@@ -45,17 +45,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="cConectar.cs" />
-    <Compile Include="cMateria.cs" />
-    <Compile Include="cMaterias.cs" />
-    <Compile Include="cNovedad.cs" />
-    <Compile Include="cNovedades.cs" />
-    <Compile Include="cTipoNovedad.cs" />
-    <Compile Include="cTiposNovedad.cs" />
-    <Compile Include="cTiposUsuario.cs" />
-    <Compile Include="cTipoUsuario.cs" />
-    <Compile Include="cUsuario.cs" />
-    <Compile Include="cUsuarios.cs" />
+    <Compile Include="Conexión\cConectar.cs" />
+    <Compile Include="Clases Base\cMateria.cs" />
+    <Compile Include="Clases List\cMaterias.cs" />
+    <Compile Include="Clases Base\cNovedad.cs" />
+    <Compile Include="Clases List\cNovedades.cs" />
+    <Compile Include="Clases Base\cTipoNovedad.cs" />
+    <Compile Include="Clases List\cTiposNovedad.cs" />
+    <Compile Include="Clases List\cTiposUsuario.cs" />
+    <Compile Include="Clases Base\cTipoUsuario.cs" />
+    <Compile Include="Clases Base\cUsuario.cs" />
+    <Compile Include="Clases List\cUsuarios.cs" />
+    <Compile Include="Conexión\ConexionAlternativa.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

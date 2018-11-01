@@ -55,7 +55,9 @@ namespace Modelos
                                 return true;
                         else
                                 return false;
-                        
+
+
+                        con.Close();
                     }
                 } catch (Exception e) { Console.WriteLine(e.Message.ToString()); }
 
