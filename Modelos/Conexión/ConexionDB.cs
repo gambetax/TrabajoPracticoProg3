@@ -4,25 +4,41 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.OleDb;
+using System.Data.Sql;
 
 namespace Modelos.Conexión
 {
-    class ConexionAlternativa
+    public class ConexionDB
     {
-        protected OleDbConnection con;
 
-        protected static string connectionString = @"Data Source =.\datos\bd_facultad.mdb;Provider=Microsoft.Jet.OLEDB.4.0;";
-        public cConectar()
+        public OleDbConnection conexion;
+        public OleDbDataAdapter adaptador;
+        public OleDbCommand comando;
+
+        private static ConexionDB ConDB = null;
+
+        public static ConexionDB CrearConexion()
+        {
+            if (ConDB == null)
+            {
+                ConDB = new ConexionDB();
+            }
+
+            return ConDB;
+        }
+
+      /*  public static ConexionDB CerrarConexion(ConexionDB conexion)
         {
             try
             {
-                this.con = new OleDbConnection(connectionString);
-                this.con.Open();
+                conexion.Close();
             }
-            catch (Exception e) { Console.WriteLine(e.Message); }
+            catch (Exception e)
+            {
+            }
         }
-
-
-
+        */
     }
+
+
 }
