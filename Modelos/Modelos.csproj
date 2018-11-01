@@ -56,7 +56,7 @@
     <Compile Include="Clases Base\cTipoUsuario.cs" />
     <Compile Include="Clases Base\cUsuario.cs" />
     <Compile Include="Clases List\cUsuarios.cs" />
-    <Compile Include="Conexión\ConexionAlternativa.cs" />
+    <Compile Include="Conexión\ConexionDB.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
